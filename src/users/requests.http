@@ -3,6 +3,24 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "any@mail.com",
+  "email": "any4@mail.com",
   "password": "any_password"
+}
+
+### Find a particular user with given id
+GET http://localhost:3000/auth/2
+
+### Find all users with given email
+GET http://localhost:3000/auth?email=any4@mail.com
+
+### Delete a particular user with given id
+DELETE http://localhost:3000/auth/5
+
+### Update a user
+PATCH http://localhost:3000/auth/2
+content-type: application/json
+
+{
+  "email": "aaaaaa2@aaaaaa.com",
+  "password": "bbbbb"
 }
