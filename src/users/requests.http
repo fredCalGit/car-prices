@@ -1,11 +1,26 @@
-### Create a new user
+### Sign up a new user
 POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "new_user@mail.com",
+  "email": "brand_new_user2@mail.com",
   "password": "any_password"
 }
+
+### Sign in 
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "brand_new_user2@mail.com",
+  "password": "any_password"
+}
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
+### Get the currently signed in user
+GET http://localhost:3000/auth/whoami
 
 ### Find a particular user with given id
 GET http://localhost:3000/auth/2
