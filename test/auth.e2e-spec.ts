@@ -25,7 +25,7 @@ describe('Authentication System (e2e)', () => {
       })
       .expect(201)
       .then((res) => {
-        const { id, email } = res.body;
+        const { id } = res.body;
         expect(id).toBeDefined();
       });
   });
